@@ -1,0 +1,7 @@
+# https://github.com/paulirish/dotfiles/blob/master/.gitignore
+
+# fish shell
+fishd.*
+.config/fish/fish_history
+fish/fish_history
+
