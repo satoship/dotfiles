@@ -3,6 +3,8 @@
 # shortcuts
 alias g="git"
 alias gs="git status -sb"
+alias gcm="git co master"
+alias hb="hub browse"
+
 alias bi="bundle install"
 alias pi="pod install"
-alias hb="hub browse"
