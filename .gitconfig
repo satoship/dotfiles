@@ -1,0 +1,11 @@
+[user]
+	name = satoship
+	email = satoship@gmail.com
+[alias]
+  co = checkout
+  d = diff
+  dc = diff --cached
+  br = branch
+  ci = commit
+  r = revert
+  cp = cherry-pick

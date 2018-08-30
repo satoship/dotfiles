@@ -2,4 +2,5 @@
 
 # shortcuts
 alias g="git"
+alias gs="git status -sb"
 
