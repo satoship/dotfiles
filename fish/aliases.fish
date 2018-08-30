@@ -3,4 +3,5 @@
 # shortcuts
 alias g="git"
 alias gs="git status -sb"
-
+alias bi="bundle install"
+alias pi="pod install"
