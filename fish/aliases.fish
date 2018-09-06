@@ -5,6 +5,7 @@ alias g="git"
 alias gs="git status -sb"
 alias gcm="git co master"
 alias gg="git grep"
+alias gb="git blame"
 alias hb="hub browse"
 
 alias bi="bundle install"
