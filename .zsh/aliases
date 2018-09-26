@@ -1,0 +1,15 @@
+# basic
+alias ls='ls -G'
+alias ll='ls -l'
+alias la='ls -la'
+
+# git
+alias g='git'
+alias gs="git status -sb"
+alias gb='git blame'
+alias gg='git grep'
+alias gcm='git co master'
+alias hb="hub browse"
+
+# global alias
+alias -g G='| grep'

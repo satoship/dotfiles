@@ -1,0 +1,23 @@
+function gp {
+  remote_repository="origin"
+  current_branch=$(git branch | grep '*' | awk '{ print $2 }')
+  if [[ "$current_branch" = "master" ]]; then
+    echo "master is dame"
+    return
+  fi
+  git push $remote_repository $current_branch
+}
+
+function gfp {
+  remote_repository="origin"
+  current_branch=$(git branch | grep '*' | awk '{ print $2 }')
+  read -q RESULT\?"FORCE push to ${current_branch}?:"
+  if [[ "${RESULT}" = "y" ]]; then
+    echo ''
+    git push -f $remote_repository $current_branch
+  fi
+}
+
+function git-delete-branches {
+  git branch | grep -v '*' | grep -v 'master' | xargs git branch -D
+}

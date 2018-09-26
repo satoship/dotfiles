@@ -1,0 +1,7 @@
+# https://github.com/rbenv/rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# https://github.com/phpenv/phpenv
+export PATH="$HOME/.phpenv/bin:$PATH"
+eval "$(phpenv init - zsh)"

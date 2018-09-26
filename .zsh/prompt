@@ -1,0 +1,33 @@
+# - http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html
+# - http://www.sirochro.com/note/terminal-zsh-prompt-customize/
+# - http://mollifier.hatenablog.com/entry/20090814/p1
+# %E - Clear to end of line.
+# %W - 日付
+# %* - 時間
+PROMPT="[%/] %E
+%# "
+RPROMPT="%1(v|%F{blue}%1v%f|)"
+# http://www.machu.jp/diary/20130114.html#p01
+setopt transient_rprompt
+
+# VCS
+# - http://zsh.sourceforge.net/Doc/Release/User-Contributions.html#vcs_005finfo-Hooks
+# - http://tkengo.github.io/blog/2013/05/12/zsh-vcs-info/
+# - https://qiita.com/mollifier/items/8d5a627d773758dd8078
+autoload -Uz vcs_info
+setopt prompt_subst
+# %r - リポジトリ
+# %b - ブランチ
+# %S - リポジトリルートから見た今のディレクトリの相対パス
+# %c - stagedstr 文字列
+# %u - unstagedstr 文字列
+# %a - アクション名(mergeなど) actionformats のみで指定可
+zstyle ':vcs_info:*' formats "%F{green} %c%u (%r/%b) [%S]%f"
+zstyle ':vcs_info:*' actionformats '[%b|%a]'
+# check-for-changes
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
+zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
+
+precmd () { vcs_info }
+RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
