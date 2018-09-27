@@ -7,3 +7,5 @@ fish/fish_history
 
 # config
 .idea/
+
+.vscode/
