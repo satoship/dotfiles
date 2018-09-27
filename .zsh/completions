@@ -1,0 +1,6 @@
+# 補完
+# - https://qiita.com/syui/items/ed2d36698a5cc314557d
+# - http://voidy21.hatenablog.jp/entry/20090902/1251918174
+autoload -Uz compinit
+compinit
+zstyle ':completion:*:default' menu select=2
