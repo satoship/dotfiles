@@ -3,5 +3,5 @@ source ~/.zsh/basic
 source ~/.zsh/prompt
 source ~/.zsh/completions
 source ~/.zsh/aliases
-source ~/.zsh/path
+source ~/.zsh/env
 source ~/.zsh/functions
