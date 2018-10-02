@@ -11,5 +11,8 @@ alias gg='git grep'
 alias gcm='git co master'
 alias hb="hub browse"
 
+# dev
+alias bi='bundle install'
+
 # global alias
 alias -g G='| grep'
