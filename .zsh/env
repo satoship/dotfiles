@@ -23,3 +23,6 @@ export PKG_CONFIG_PATH="/usr/local/opt/mysql@5.7/lib/pkgconfig"
 
 # compser
 export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+# aws
+export PATH="$HOME/.local/bin:$PATH"
