@@ -21,3 +21,9 @@ function gfp {
 function git-delete-branches {
   git branch | grep -v '*' | grep -v 'master' | xargs git branch -D
 }
+
+function ruby-available-versions {
+  brew update
+  brew upgrade ruby-build
+  rbenv install --list
+}
