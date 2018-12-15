@@ -27,3 +27,13 @@ function ruby-available-versions {
   brew upgrade ruby-build
   rbenv install --list
 }
+
+function git-checkout-remote-branch {
+  branch=$1
+  if [[ -z "${branch}" ]]; then
+    echo "branch is required"
+    return
+  fi
+  git checkout -b ${branch} origin/${branch}
+}
+
