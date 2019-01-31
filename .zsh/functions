@@ -19,7 +19,7 @@ function gfp {
 }
 
 function git-delete-branches {
-  git branch | grep -v '*' | grep -v 'master' | xargs git branch -D
+  git branch --merged | grep -v '*' | grep -v 'master' | xargs git branch -D
 }
 
 function ruby-available-versions {
