@@ -11,6 +11,10 @@ function gp {
 function gfp {
   remote_repository="origin"
   current_branch=$(git branch | grep '*' | awk '{ print $2 }')
+  if [[ "$current_branch" = "master" ]]; then
+    echo "master is dame"
+    return
+  fi
   read -q RESULT\?"FORCE push to ${current_branch}?:"
   if [[ "${RESULT}" = "y" ]]; then
     echo ''
