@@ -26,3 +26,9 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 # aws
 export PATH="$HOME/.local/bin:$PATH"
+
+# nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# https://flutter.dev/docs/get-started/install/macos
+export PATH="$PATH:$HOME/Documents/flutter/bin"
