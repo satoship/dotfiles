@@ -28,3 +28,6 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # https://flutter.dev/docs/get-started/install/macos
 export PATH="$PATH:$HOME/Documents/flutter/bin"
+
+# terraform@0.11
+export PATH="/usr/local/opt/terraform@0.11/bin:$PATH"
