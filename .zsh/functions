@@ -5,6 +5,10 @@ function gp {
     echo "master is dame"
     return
   fi
+  if [[ "$current_branch" = "main" ]]; then
+    echo "main is dame"
+    return
+  fi
   git push $remote_repository $current_branch
 }
 
