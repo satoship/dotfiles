@@ -8,7 +8,8 @@ alias g='git'
 alias gs="git status -sb"
 alias gb='git blame'
 alias gg='git grep'
-alias gcm='git co master'
+alias gcm='git co main'
+alias gcmaster='git co master'
 alias hb="hub browse"
 
 # dev
