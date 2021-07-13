@@ -34,3 +34,8 @@ export PATH="/usr/local/opt/terraform@0.11/bin:$PATH"
 # openssl@1.1
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
+# golang
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
+export PATH="$PATH:$GOBIN"
